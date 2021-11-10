@@ -1,2 +1,4 @@
-def hello_world():
-    print("hello world")
+def hello_world(name="world"):
+    hello = f"hello {name}"
+    print(hello)
+    return hello
