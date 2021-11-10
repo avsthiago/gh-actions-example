@@ -44,7 +44,6 @@ jobs:
           args: >
             -Dsonar.sources=src/main.py
             -Dsonar.tests=src/main_tests.py
-            -Dsonar.verbose=true
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
