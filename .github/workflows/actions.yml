@@ -27,6 +27,6 @@ jobs:
       - name: Run flake8
         uses: suo/flake8-github-action@releases/v1
         with:
-          workflow: 'example_workflow'
+          checkName: 'example_workflow'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
