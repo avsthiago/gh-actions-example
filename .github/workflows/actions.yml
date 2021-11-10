@@ -28,5 +28,6 @@ jobs:
         uses: suo/flake8-github-action@releases/v1
         with:
           checkName: 'example_workflow'
+          exclude: 'main_flake_fail.py'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
