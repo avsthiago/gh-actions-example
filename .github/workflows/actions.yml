@@ -42,6 +42,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.sources=src/main.py
+            -Dsonar.sources=src/main_sonar_fail.py
             -Dsonar.tests=src/main_tests.py
             -Dsonar.verbose=true
