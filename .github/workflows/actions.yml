@@ -44,4 +44,3 @@ jobs:
           args: >
             -Dsonar.sources=src/main_sonar_fail.py
             -Dsonar.tests=src/main_tests.py
-            -Dsonar.verbose=true
