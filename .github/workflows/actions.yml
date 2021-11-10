@@ -28,13 +28,6 @@ jobs:
         uses: py-actions/flake8@v1
         with:
           ignore: "F401"
-          exclude: "main_flake_fail.py"
+          exclude: "./src/main_flake_fail.py"
           max-line-length: "100"
-          # path: "src"
-        # - name: Run flake8
-      #   uses: suo/flake8-github-action@releases/v1
-      #   with:
-      #     checkName: 'example_workflow'
-      #     exclude: 'main_flake_fail.py'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: "src"
