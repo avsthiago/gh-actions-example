@@ -9,4 +9,3 @@ def test_default_greeting():
 def test_custom_greeting():
     greeting = hello_world("kbc")
     assert greeting == "hello kbc"
-
