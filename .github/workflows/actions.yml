@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  example_workflow:
+  workflow_sonarqube_fail:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Python
@@ -28,7 +28,7 @@ jobs:
         uses: py-actions/flake8@v1
         with:
           ignore: "F401"
-          exclude: "./src/main_flake_fail.py"
+          exclude: "./src/main_sonar_fail.py"
           max-line-length: "100"
           path: "src"
       - name: Test with pytest
